@@ -21,7 +21,6 @@ app.use((req, res) => {
 // Start the express server at DB connection
 db.connect(err => {
     if (err) throw err;
-    console.log('Database Connected.');
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
     });
